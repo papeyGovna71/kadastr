@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<li style="pointer-events: none;" class="logo">
+				<a href="#"><img src="img/logo1.svg" alt="Кадастровый инженер"></a>
+			</li>
+			<li class="v_menu" style="margin-left: 128px;">
+				<a href="#">
+					Главная
+				</a>
+			</li>
+			<li class="v_menu">
+				<a href="#o_compannii">
+					О компании
+				</a>
+			</li>
+			<li class="v_menu">
+				<a href="#uslugi">
+					Услуги
+				</a>
+			</li>
+			<li class="v_menu" style="margin-top: 24px;">
+				<a href="#contakti">
+					Контакты
+				</a>
+			</li>
+			<li class="v_menu">
+				<a href="tel:+79114656467">
+					+7 (911) 465-64-67
+				</a>
+			</li>
+		</div>
+		<div>
+			<!-- <li style="pointer-events: none;margin-top: -29px;margin-left: 609px;">
+				<img src="img/rectangle1.svg" alt="">
+			</li> -->
+			<li style="pointer-events: none; margin-top: -30px; height: 2px;">
+				<img src="img/vector1.svg" alt="">
+			</li>
+		</div>
+	</header>
+	<section>
+		<div class="conteiner">
+			<center>
+				<li>
+					<h1>
+						Кадастровая инженерия
+					</h1>
+				</li>
+				<li>
+					<h3>
+						В Калининграде
+					</h3>
+				</li>
+				<li style="pointer-events: none;margin-top: -4px">
+					<img src="img/vecto2.svg" alt="">
+				</li>
+					<a name="o_compannii"></a>
+				<li style="pointer-events: none;margin-top: -31px">
+					<img src="img/futaj.svg" alt="">
+				</li>
+				<li style="pointer-events: none;margin-top: 18px">
+						<img src="img/ot-logo.svg" alt="">
+				</li>
+			</center>
+		</div>
+	</section>
+	<section>
+		<div class="conteiner">
+			<center>
+				<li>
+					<h2>
+						О компании
+					</h2>
+				</li>
+				<li><a name="uslugi"></a>
+					<p class="inf">
+						Наша компания функционирует с 2003 года и вместе с<br>
+						вами прошла все этапы изменения земельного законодательства.<br>
+						Накоплен опыт взаимодействия с КИО и КГА,<br>
+						РОСРЕЕСТРОМ и Администрациями.<br>
+					</p>
+				</li>
+				<li>
+					<img style="pointer-events: none;margin-top: 5px;" src="img/otstup1.svg" alt="">
+				</li>
+			</center>
+		</div>
+	</section>
+	<section style="margin-left: 335px;">
+		<button class="menu_link">
+			<img style="width: 25px;height: 25px; margin: 10px 5px 0px 0px" src="img/arow.svg">
+				Топографо-геодезическая деятельность
+		</button>
+		<div class="content">
+			<p>
+				Это комплекс работ, направленный на получение информации о рельефе и<br>
+		        ситуации местности. Инженерно-геодезические изыскания служат основой<br>
+		        для проектных и кадастровых работ, а также основой для проведения иных<br>
+		        видов изысканий и обследований.
+			</p>
+		</div>
+		<button class="menu_link">
+			<img style="width: 25px;height: 25px; margin: 10px 5px 0px 0px" src="img/arow.svg">
+				Инженерно-геодезические услуги
+		</button>
+		<div class="content">
+			<p>
+				напиши тут что-нибудь 
+		</div>
+		<button class="menu_link">
+			<img style="width: 25px;height: 25px; margin: 10px 5px 0px 0px" src="img/arow.svg">
+				Сопровождение строительства на всех этапах
+		</button>
+		<div class="content">
+			<p>
+				напиши тут что-нибудь 
+		</div>
+		<button class="menu_link">
+			<img style="width: 25px;height: 25px; margin: 10px 5px 0px 0px" src="img/arow.svg">
+				Создание технического плана
+		</button>
+		<div class="content">
+			<p>
+				напиши тут что-нибудь 
+		</div>
+		<button class="menu_link">
+			<img style="width: 25px;height: 25px; margin: 10px 5px 0px 0px" src="img/arow.svg">
+				Создание межевого плана
+		</button>
+		<div class="content">
+			<p>
+				напиши тут что-нибудь 
+		</div>
+		<button class="menu_link">
+			<img style="width: 25px;height: 25px; margin: 10px 5px 0px 0px" src="img/arow.svg">
+				Подготовка документов
+		</button>
+		<div class="content">
+			<p>
+				напиши тут что-нибудь 
+			</p>
+		</div>
+		<script>
+			var coll = document.getElementsByClassName('menu_link');
+			var i;
+			for(i = 0; i < coll.length; i++){
+				coll[i].addEventListener('click', function(){
+					this.classList.toggle('active');
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight){
+						content.style.maxHeight = null;
+					} else{
+						content.style.maxHeight = content.scrollHeight + 'px'
+					}
+				})
+			}
+		</script>
+	</section>
+	<section>
+		<div class="conteiner">
+			<center>
+				<li>
+					<img style="pointer-events: none;margin-top: 25px;" src="img/otstup1.svg" alt="">
+				</li>
+				<li>
+					<h5 style="margin-top: 35px;">
+						Когда нужно обратиться<br>
+						к кадастровому инженеру?
+					</h5>
+				</li>
+				<li class="inf2">
+					<p>
+						Согласование со стороны государственных или местных органов управления <br>
+						и регистрирование в Госреестре делает возможным совершение сделок <br>
+	 					и осуществление иных действий с эксплотируемыми и новыми земельными <br>
+	 					участками. Проведение кадастровых мероприятий позволяет:
+					</p>
+				</li>
+				<li style="margin-top: -40px;" class="inf3">
+					<img style="margin: 0px 0px 0px 320px;" src="img/ellipse.svg">
+					<p style="margin-left: 7px;">
+						Продавать, делить и использовать землю в соответствии с российским; <br>
+					</p>
+				</li>
+				<li style="margin-top: -52px;" class="inf3">
+					<img style="margin: 0px 0px 0px 320px;" src="img/ellipse.svg">
+					<p style="margin-left: 7px;">
+						Подготовить проект по строительству и перепланировке; <br>
+					</p>
+				</li>
+				<li style="margin-top: -52px;" class="inf3">
+					<img style="margin: 0px 0px 0px 320px;" src="img/ellipse.svg">
+					<p style="margin-left: 7px;">
+						Согласовать благоустройство территории. <br>
+					</p>
+				</li>
+				<li>
+					<p style="font-weight: 300;font-size: 36px;margin-top: 0px;">
+						Специалисты компании "Кадастровый инженер" в Калининграде избавляют вас<br>
+						от бюрократических процедур, потери времени и денег на сборе документов <br
+						>
+						в рвзных ситуациях. Быстрое выполнение всех работ в одном месте - то, что <br>
+						получают наши клиенты. Оформите заявку на сайте и мы вам перезвоним!<br>
+					</p>
+				</li>
+			</center>
+		</div>
+	</section>
+	<section>
+		<div class="conteiner">
+			<li>
+				<h5><a name="contakti"></a>
+					Свяжитесь с нами
+				</h5>
+			</li>
+			<div class="karta">
+				<div class="svyaz">
+					<center>
+						<li>
+							<p style="font-size: 24px;font-weight: 300;color: #6C6C6C;margin-bottom: 0px;">
+								Получить консультацию
+							</p>
+						</li>
+						<li>
+							<input type="text" class="txt" placeholder="Ваше имя">
+						</li>
+						<li>
+							<input type="text" class="txt" placeholder="Телефон">
+						</li>
+						<li>
+							<input type="text" class="txt" placeholder="E-mail">
+						</li>
+						<li>
+							<input type="text" class="txt" style="padding-bottom: 83px;margin-bottom: 35px;" placeholder="Введите сообщение">
+						</li>
+						<li>
+							<a href="#" class="button">Оставить заявку</a>
+						</li>
+					</center>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer">
+			<li>
+				<a href="#"><img src="img/logo2.svg" alt="Кадастровый инженер"></a>
+			</li>
+		</div>
+	</footer>
+
+<a href="#" class="scrollup">Наверх</a>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});
+</script>
+
+
+<!-- <DIV ID = "toTop" > Наверх </DIV >
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+	$(window).scroll(function() {
+	if($(this).scrollTop() != 0) {
+	$('#toTop').fadeIn(); 
+	} else { 
+	$('#toTop').fadeOut();
+	} 
+	});
+	$('#toTop').click(function() {
+	$('body,html').animate({scrollTop:0},800);
+	});
+	});
+</script>
+ --></body>
+</html>
