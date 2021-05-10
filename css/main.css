@@ -35,6 +35,7 @@ h2 {
 	font-weight: 500;
 	font-size: 72px;
 	margin-top: 20px;
+	text-align: center;
 }
 
 h3 {
@@ -124,17 +125,24 @@ width: 100%;
 	align-items: center;
 }
 
+.txt1 {
+	font-weight: 300;
+	font-size: 36px;
+}
+
+.txt2 {
+	display: flex;
+	font-family: 'Montserrat', sans-serif;	
+	font-weight: 300;
+	font-size: 36px;
+}
+
 .menu_link {
 	display: flex;
 }
 
 .list1 {
 	padding: 10px;
-}
-
-.sub-menu_link {
-	display: none;
-	margin: -30px 0px 0px -35px;
 }
 
 .menu_link{
@@ -151,15 +159,17 @@ width: 100%;
 
 .active, 
 .menu_link: hover{ 
-background-color: #555; 
+	background-color: #555; 
 } 
 
 .content { 
-padding: 0 18px; 
-max-height: 0; 
-overflow: hidden; 
-transition: max-height 0.2s ease-out; 
-background-color: white ;
+	padding: 0 18px; 
+	max-height: 0; 
+	overflow: hidden; 
+	transition: max-height 0.2s ease-out; 
+	background-color: white;
+	font-weight: 300;
+	font-size: 36px;
 }
 
 .inf2 {
